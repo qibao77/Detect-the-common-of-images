@@ -1,19 +1,11 @@
-¸÷º¯ÊıËµÃ÷£º
-
-1  main£ºÖ÷º¯Êı£¬°üÀ¨¶ÁÈëÍ¼Æ¬£¬¼ÆËãÃ¿ÕÅÍ¼Æ¬µÄ×ÔÏàËÆĞÔÃèÊö×Ó±íÊ¾£¬¼ÆËãÏÔÖøĞÔµÃ·Ö£¬»­³ö¼ì²â½á¹û£»
-
-
-2  com_Self_Similarities£ºÓÃÓÚ¼ÆËãÍ¼Æ¬µÄ×ÔÏàËÆĞÔÃèÊö×Ó£¬¸Ã²¿·Ö°üÀ¨ÈçÏÂÒ»Ğ©×Óº¯Êı£º
-
-2.1  cal_ssd£ºÓÃÓÚ¼ÆËãpatchÓëregionµÄSSD£»
-
-2.2  get_self_sim_vec£ºÓÃÓÚ½«½«2.1¼ÆËãµÃµ½µÄÏàËÆĞÔ×ª»»Îª×ÔÏàËÆĞÔÃèÊö×ÓÏòÁ¿£»
-
-2.3  cart2polar£ºÓÃÓÚ½«Ö±½Ç×ø±ê×ª»»ÎªÒÔÇøÓòÖĞĞÄÎªÔ­µãµÄ¼«×ø±êÏµ£»
-
-2.4  get_bin£º¸ù¾İ2.3µÃµ½µÄ¼«×ø±êÏµ£¬ÓÃÓÚ½«¼«×ø±êÏµ»®·ÖÎª15*3=45¸öbin£¨ÂÛÎÄÖĞ²ÉÓÃ80bin£¬µ«ÊÇ´¦ÀíÌ«Âı£¬ÕâÀï°ÑÍ¼Ïñ½øĞĞÁËËõ·Å£¬Òò´ËÏàÓ¦¼õÉÙÁËbinµÄ»®·Ö£©
-
-£¨×¢£ºÎªÁË¼Ó¿ì¼ÆËã£¬ÊÂÏÈÍ¨¹ı2.3ºÍ2.4½«binÖ±½Ó»®·ÖºÃ£¬Ö®ºóÀàËÆ²é±í¾ÍĞĞ£©
-
-
-3  draw_result£ºÓÃÓÚ»­³ö¹²Í¬²¿·ÖµÄ¼ì²â½á¹û¡£
+This is the implementation of "Matching local self-similarities across images and videos"
+Introduction
+1  mainï¼šThe main function includes reading the image, calculating the self-similarity descriptor of each picture, calculating the saliency score, and drawing the detection result; 
+2  com_Self_Similaritiesï¼šCalculate the self-similarity descriptor;
+    2.1  cal_ssdï¼šCalculate the SSD between patch and regionï¼›
+    2.2  get_self_sim_vecï¼šConvert the similarity calculated in 2.1 to a self-similarity descriptor vector;
+    2.3  cart2polarï¼š Convert Cartesian coordinates to a polar coordinate system; 
+    2.4  get_binï¼šDivide the polar coordinate system into 15*3=45 bins;
+3  draw_resultï¼šShow results.
+Reference
+Shechtman E, Irani M. Matching local self-similarities across images and videos[C]//2007 IEEE Conference on Computer Vision and Pattern Recognition. IEEE, 2007: 1-8.
