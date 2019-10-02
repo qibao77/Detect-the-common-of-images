@@ -15,7 +15,7 @@
 3  draw_result：Show results.
 
 ## Result
-![detect common](result/detect common.png)
+![detect common](https://github.com/qibao77/Detect-the-common-of-images/blob/master/result/detect%20common.png)
 
 ## Reference
 Shechtman E, Irani M. Matching local self-similarities across images and videos[C]//2007 IEEE Conference on Computer Vision and Pattern Recognition. IEEE, 2007: 1-8.
